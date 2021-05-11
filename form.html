@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <h1>Formulários</h1>
+
+    <form action="resultado.html">
+      <fieldset>
+        <legend>Informações Básicas</legend>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" value="Diego" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="idade">Idade</label>
+          <input type="number" name="idade" id="idade" />
+        </div>
+        <div>
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Outras Informações</legend>
+
+        <fieldset>
+          <legend>Estilo musical favorito</legend>
+          <input
+            type="radio"
+            name="musica"
+            value="sertanejo"
+            id="musica_sertanejo"
+            checked
+          />
+          <label for="musica_sertanejo">Sertanejo</label>
+          <input
+            type="radio"
+            name="musica"
+            value="eletronica"
+            id="musica_eletronica"
+          />
+          <label for="musica_eletronica">Eletrônica</label>
+          <input type="radio" name="musica" value="pop" id="musica_pop" />
+          <label for="musica_pop">POP</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Estação favorita</legend>
+          <input type="radio" name="estacao" value="verao" id="estacao_verao" />
+          <label for="estacao_verao">Verão</label>
+          <input
+            type="radio"
+            name="estacao"
+            value="outono"
+            id="estacao_outono"
+          />
+          <label for="estacao_outono">Outono</label>
+          <input
+            type="radio"
+            name="estacao"
+            value="inverno"
+            id="estacao_inverno"
+            checked
+          />
+          <label for="estacao_inverno">Inverno</label>
+          <input
+            type="radio"
+            name="estacao"
+            value="primavera"
+            id="estacao_primavera"
+          />
+          <label for="estacao_primavera">Primavera</label>
+        </fieldset>
+        <div>
+          <input type="checkbox" name="praia" value="sim" id="praia" checked />
+          <label for="praia">Já morou na praia?</label>
+        </div>
+        <div>
+          <input type="checkbox" name="paranagua" id="paranagua" value="sim" />
+          <label for="paranagua">Mora em Paranaguá?</label>
+        </div>
+        <div>
+          <label for="marca">Qual sua marca de carros favorita?</label>
+          <select name="marca" id="marca">
+            <optgroup label="Melhores">
+              <option value="mercedes">Mercedes-Benz</option>
+              <option value="audi" selected>Audi</option>
+            </optgroup>
+            <optgroup label="Não tão boas">
+              <option value="fiat">Fiat</option>
+              <option value="gm">GM</option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <label for="curriculo">Currículo</label>
+          <div>
+            <textarea
+              name="curriculo"
+              id="curriculo"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <div>
+        <input type="submit" value="Cadastrar" />
+        <button type="submit">Cadastrar com Button</button>
+        <button type="reset">Zerar dados</button>
+      </div>
+    </form>
+  </body>
+</html>
